@@ -20,6 +20,7 @@ This repository demonstrates a simple CI/CD workflow for Render deployment of a 
 6. Render deployment target set up
 7. Authentication
 8. How to get those cool 'passing' badges
+9. How to start the app automatically in codespaces
 
 ## 1. Workflow
 
@@ -201,7 +202,7 @@ Last bit of set-up is to store your Render credentials on GitHub so that the Git
 1. RENDER_SERVICE_ID (found in the URL of the service page on Render)
 2. RENDER_API_KEY (Go to your Render profile > account settings > API keys)
 
-## 7. How to get those cool 'passing' badges
+## 8. How to get those cool 'passing' badges
 
 From the GitHub 'Actions' tab:
 
@@ -209,3 +210,11 @@ From the GitHub 'Actions' tab:
 2. Click on the three dot menu next to 'Re-run all jobs' at the upper right.
 3. Choose 'Create status badge'.
 4. Copy the markdown to your README file.
+
+## 9. How to start the app automatically in codespaces
+
+Codespaces run an instance of the development container specified by `.devcontainer/container.json`. You can set-up lots of fun stuff from there. To start the app on Streamlit's development server using the following:
+
+```json
+"postAttachCommand": "streamlit run movie_recommender/movie_recommender.py"
+```

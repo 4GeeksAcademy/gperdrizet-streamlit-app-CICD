@@ -13,10 +13,11 @@
 		  "-dbaeumer.vscode-eslint",
 		  "ms-python.python",
 		  "ms-toolsai.jupyter",
-		  "streetsidesoftware.code-spell-checker"
+		  "streetsidesoftware.code-spell-checker",
+		  "github.vscode-github-actions",
+		  
 		]
 	  }
 	},
-	"postCreateCommand": "python movie_recommender/train_model.py",
 	"postAttachCommand": "streamlit run movie_recommender/movie_recommender.py"
 }
