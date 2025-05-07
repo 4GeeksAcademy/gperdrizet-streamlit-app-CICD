@@ -32,7 +32,7 @@ def get_movie_recommendations(movie_title, model, tfidf_matrix, encoded_data_df)
 if __name__ == '__main__':
 
     # Page title
-    st.title('Movie recommender')
+    st.title('KNN movie recommender')
 
     input_movie=st.selectbox(
         label='Enter a movie title:', 
