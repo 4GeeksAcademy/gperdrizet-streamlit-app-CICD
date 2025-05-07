@@ -14,8 +14,7 @@
 		  "ms-python.python",
 		  "ms-toolsai.jupyter",
 		  "streetsidesoftware.code-spell-checker",
-		  "github.vscode-github-actions",
-		  
+		  "github.vscode-github-actions"
 		]
 	  }
 	},
